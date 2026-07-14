@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'linux' } // Utilise l'agent Docker avec le label linux
 
     tools {
         maven "Maven" 
